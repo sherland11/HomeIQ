@@ -17,8 +17,8 @@ export default function Home() {
                 <li><Link href="/contacts">Контакты</Link></li>
             </ul>
             <div className={styles.mainPage__authentication}>
-              <Link href="/log-in" className={`${styles.mainPage__logIn} ${styles.mainPage__blackBtn}`}>Вход</Link>
-              <Link href="/sign-up" className={`${styles.mainPage__signUp} ${styles.mainPage__whiteBtn}`}>Регистрация</Link>
+              <Link href="/log-in" className={styles.mainPage__blackBtn}>Вход</Link>
+              <Link href="/sign-up" className={styles.mainPage__whiteBtn}>Регистрация</Link>
             </div>
         </nav>
       </header>
@@ -30,8 +30,8 @@ export default function Home() {
             <div className={styles.mainPage__title}>Заголовок</div>
             <div className={styles.mainPage__subTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ex nam illum nostrum quisquam odit, amet debitis eligendi quam minus!</div>
             <div className={styles.mainPage__buttons}>
-              <Link href="/build" className={`${styles.mainPage__logIn} ${styles.mainPage__whiteBtn}`}>Заказать</Link>
-              <Link href="/2" className={`${styles.mainPage__logIn} ${styles.mainPage__blackBtn}`}>2 кнопка</Link>
+              <Link href="/build" className={styles.mainPage__whiteBtn}>Заказать</Link>
+              <Link href="/2" className={styles.mainPage__blackBtn}>2 кнопка</Link>
             </div>
           </div>
           <div className={styles.mainPage__area}>
@@ -61,6 +61,8 @@ export default function Home() {
             <Card title="Title card 6" subTitle="afw wwwww wwwww wwwwww wwwwww wwwwwwwwwww"></Card>
           </div>
         </div>
+
+        <div className={styles.mainPage__example}></div>
 
       </main>
 

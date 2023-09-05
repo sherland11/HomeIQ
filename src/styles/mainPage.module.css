@@ -51,7 +51,6 @@
 
 .mainPage__blackBtn {
     text-align: center;
-    line-height: 35px;
     border: 1px solid #888888;
     background: #0A0A0A;
     color: #ffffff;
@@ -60,20 +59,15 @@
 
 .mainPage__whiteBtn {
     text-align: center;
-    line-height: 35px;
     background: #ffffff;
     color: #000000;
     border-radius: 6px;
 }
 
-.mainPage__logIn {
+.mainPage__authentication a {
     width: 130px;
     height: 35px;
-}
-
-.mainPage__signUp {
-    width: 130px;
-    height: 35px;
+    line-height: 35px;
 }
 
 .mainPage__content {
@@ -110,6 +104,19 @@
     font-size: 20px;
     line-height: 30px;
     color: #888888;
+    margin-bottom: 30px;
+}
+
+.mainPage__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+}
+
+.mainPage__buttons a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .mainPage__area {
