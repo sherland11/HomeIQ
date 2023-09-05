@@ -1,0 +1,254 @@
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainPage a {
+    text-decoration: none;
+}
+
+.mainPage__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #888888; 
+}
+
+.mainPage__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 64px;
+}
+
+.mainPage__nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainPage__nav ul a {
+   color: #888888;
+   transition: 200ms ease color;
+}
+
+.mainPage__nav ul a:hover {
+    color: #ffffff;
+ }
+
+.mainPage__authentication {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.mainPage__blackBtn {
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #888888;
+    background: #0A0A0A;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.mainPage__whiteBtn {
+    text-align: center;
+    line-height: 35px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 6px;
+}
+
+.mainPage__logIn {
+    width: 130px;
+    height: 35px;
+}
+
+.mainPage__signUp {
+    width: 130px;
+    height: 35px;
+}
+
+.mainPage__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.mainPage__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 93vh;
+    text-align: center;
+}
+
+.mainPage__bannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    z-index: 100;
+}
+
+.mainPage__title {
+    font-size: 68px;
+    margin-bottom: 56px;
+}
+
+.mainPage__subTitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #888888;
+}
+
+.mainPage__area {
+    position: absolute;
+    top: 64px;
+    width: 80%;
+    height: 93vh;
+}
+
+.mainPage__circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainPage__circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.mainPage__circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.mainPage__circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.mainPage__circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.mainPage__circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.mainPage__circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.mainPage__circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.mainPage__circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.mainPage__circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.mainPage__circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.mainPage__circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.mainPage__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mainPage__cardsTitle {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.mainPage__cardsContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}

@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 29%; 
+    border: 2px solid #333333;
+    padding: 1.5%;
+    border-radius: 12px;
+    margin-bottom: 1.5%;
+}
+
+.card_withOutImage {
+    justify-content: center;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+.card__title {
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+}
+
+.card__subTitle {
+    color: #888888;
+}
+
+.card__title_withOutImage {
+    margin: 0 0 5px 0;
+}
