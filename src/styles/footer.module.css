@@ -4,7 +4,7 @@
     width: 80%;
     margin: 0 auto;
     align-items: center;
-    border-top: solid 1px #888888 ;
+    border-top: solid 1px var(--secondary-color) ;
     padding: 36px 0 36px 0;
     margin-top: 100px;
 }
@@ -26,7 +26,7 @@
 .footer__nav a {
     display: flex;
     text-decoration: none;
-    color: #888888;
+    color: var(--secondary-color);
     transition: 200ms ease color;
 }
 
@@ -37,33 +37,22 @@
 .footer__theme {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100px;
     height: 40px;
-    border: 1px solid #888888;
+    border: 1px solid var(--secondary-color);
     border-radius: 9999px;
 }
 
-.footer__theme div {
-    background-size: 100%;
-    background-color: #ffffff;
-    mask-size: 50%;
-    -webkit-mask-size: 50%;
-    width: 32px;
-    height: 32px;
+.footer__theme svg {
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+    cursor: pointer;
 }
 
-.footer__lightTheme {
-    mask: url("../images/sun.svg") no-repeat center;
-    -webkit-mask: url("../images/sun.svg") no-repeat center;
-    
-    
-}
-
-.footer__systemTheme {
-    mask: url("../images/laptop.svg") no-repeat center;
-    -webkit-mask: url("../images/laptop.svg") no-repeat center;
-}
-
-.footer__darkTheme {
-    mask: url("../images/moon.svg") no-repeat center;
-    -webkit-mask: url("../images/moon.svg") no-repeat center;
+.footer__theme_active {
+    background-color: var(--footer-background-color);
+    border-radius: 50%;
 }

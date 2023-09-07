@@ -1,7 +1,15 @@
+'use client'
+import { useState } from "react"
 import styles from '@/styles/footer.module.css'
 import Link from 'next/link'
+import Sun from '@/images/sun.svg'
+import Laptop from '@/images/laptop.svg'
+import Moon from '@/images/moon.svg'
 
 export default function footer() {
+
+    const [theme, setTheme] = useState<string>("dark")
+
     return (
         <footer className={styles.footer}>
             <div className={styles.footer__menu}>
@@ -12,9 +20,9 @@ export default function footer() {
                     <Link href="/contacts">Контакты</Link>
                 </nav>
                 <div className={styles.footer__theme}>
-                    <div className={styles.footer__lightTheme}></div>
-                    <div className={styles.footer__systemTheme}></div>
-                    <div className={styles.footer__darkTheme}></div>
+                    <Sun className={theme === "light" ? styles.footer__theme_active : ""} onClick={() => setTheme("light")} fill="#ffffff" />
+                    <Laptop className={theme === "system" ? styles.footer__theme_active : ""} onClick={() => setTheme("system")} fill="#ffffff" />
+                    <Moon className={theme === "dark" ? styles.footer__theme_active : ""} onClick={() => setTheme("dark")} fill="#ffffff" />
                 </div>
             </div>
             <div className={styles.footer__company}>© 2023 MyCompany, Inc.</div>

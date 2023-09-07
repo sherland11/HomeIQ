@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #888888; 
+    border-bottom: 1px solid var(--secondary-color); 
 }
 
 .mainPage__nav {
@@ -35,12 +35,12 @@
 }
 
 .mainPage__nav ul a {
-   color: #888888;
+   color: var(--secondary-color);
    transition: 200ms ease color;
 }
 
 .mainPage__nav ul a:hover {
-    color: #ffffff;
+    color: var(--accent-color);
  }
 
 .mainPage__authentication {
@@ -51,16 +51,16 @@
 
 .mainPage__blackBtn {
     text-align: center;
-    border: 1px solid #888888;
-    background: #0A0A0A;
-    color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    background: var(--button-background-color);
+    color: var(--accent-color);
     border-radius: 6px;
 }
 
 .mainPage__whiteBtn {
     text-align: center;
-    background: #ffffff;
-    color: #000000;
+    background: var(--accent-color);
+    color: var(--theme-color);
     border-radius: 6px;
 }
 
@@ -103,7 +103,7 @@
 .mainPage__subTitle {
     font-size: 20px;
     line-height: 30px;
-    color: #888888;
+    color: var(--secondary-color);
     margin-bottom: 30px;
 }
 
