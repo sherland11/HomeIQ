@@ -31,7 +31,7 @@
 }
 
 .footer__nav a:hover {
-    color: #ffffff;
+    color: var(--accent-color);
 }
 
 .footer__theme {
@@ -50,9 +50,10 @@
     height: 16px;
     padding: 7px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .footer__theme_active {
     background-color: var(--footer-background-color);
-    border-radius: 50%;
+    transition: 200ms ease all;
 }

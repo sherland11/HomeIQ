@@ -49,7 +49,7 @@
     width: 20%;
 }
 
-.mainPage__blackBtn {
+.mainPage__secondaryBtn {
     text-align: center;
     border: 1px solid var(--secondary-color);
     background: var(--button-background-color);
@@ -57,11 +57,12 @@
     border-radius: 6px;
 }
 
-.mainPage__whiteBtn {
+.mainPage__accentBtn {
     text-align: center;
     background: var(--accent-color);
     color: var(--theme-color);
     border-radius: 6px;
+    border: 1px solid var(--accent-color);
 }
 
 .mainPage__authentication a {
@@ -141,7 +142,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #79797970;
     animation: animate 25s linear infinite;
     bottom: -150px;
     

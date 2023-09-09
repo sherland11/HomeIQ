@@ -1,3 +1,4 @@
+import ThemeProvider from '@/providers/ThemeProvider'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
@@ -17,11 +18,13 @@ export default function RootLayout({
   footer: React.ReactNode
 }) {
   return (
-    <html lang="ru">
-      <body className={roboto.className}>
-        {children}
-        {footer}
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang="ru">
+        <body className={roboto.className}>
+          {children}
+          {footer}
+        </body>
+      </html>
+    </ThemeProvider>
   )
 }
