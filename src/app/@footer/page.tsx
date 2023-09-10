@@ -8,8 +8,7 @@ import Moon from '@/images/moon.svg'
 import { ThemeContext, themes } from "@/contexts/ThemeContext"
 
 export default function footer() {
-
-    const [themeActive, setThemeActive] = useState<string>("dark")
+    const [themeActive, setThemeActive] = useState<string>("system")
 
     return (
         <ThemeContext.Consumer>
@@ -23,17 +22,17 @@ export default function footer() {
                             <Link href="/contacts">Контакты</Link>
                         </nav>
                         <div className={styles.footer__theme}>
-                            <Sun className={theme === "light" ? styles.footer__theme_active : ""} onClick={() => { 
+                            <Sun className={themeActive === "light" ? styles.footer__theme_active : ""} onClick={() => { 
                                 setTheme(themes.light)
-                                setThemeActive("light") 
+                                setThemeActive("light")
                             }} fill={theme === "light" ? "#000000" : "#ffffff"} />
-                            <Laptop className={themeActive === "system" ? styles.footer__theme_active : ""} onClick={() => { 
-                                setTheme(themes.dark)
-                                setThemeActive("system") 
+                            <Laptop className={themeActive === "system" ? styles.footer__theme_active : ""} onClick={() => {
+                                setTheme(themes.system)
+                                setThemeActive("system")
                             }} fill={theme === "light" ? "#000000" : "#ffffff"} />
-                            <Moon className={theme === "dark" ? styles.footer__theme_active : ""} onClick={() => { 
+                            <Moon className={themeActive === "dark" ? styles.footer__theme_active : ""} onClick={() => { 
                                 setTheme(themes.dark)
-                                setThemeActive("dark") 
+                                setThemeActive("dark")
                             }} fill={theme === "light" ? "#000000" : "#ffffff"} />
                         </div>
                     </div>
