@@ -3,26 +3,15 @@ import styles from '@/styles/mainPage.module.css'
 import Link from 'next/link'
 import firstImg from '@/images/1.png'
 import secondImg from '@/images/2.png'
+import Image from 'next/image'
+import firstExample from "@/images/example/1.jpg"
+import secondExample from "@/images/example/2.png"
+import thirdExample from "@/images/example/3.jpg"
 
 export default function Home() {
   return (
     <div className={styles.mainPage}>
-
-      <header className={styles.mainPage__header}>
-        <nav className={styles.mainPage__nav}>
-            <ul>
-                <li><Link href="/" className={styles.mainPage__logo}>Логотип</Link></li>
-                <li><Link href="/build">Сборка</Link></li>
-                <li><Link href="/blog">Блог</Link></li>
-                <li><Link href="/contacts">Контакты</Link></li>
-            </ul>
-            <div className={styles.mainPage__authentication}>
-              <Link href="/log-in" className={styles.mainPage__secondaryBtn}>Вход</Link>
-              <Link href="/sign-up" className={styles.mainPage__accentBtn}>Регистрация</Link>
-            </div>
-        </nav>
-      </header>
-
+      
       <main className={styles.mainPage__content}>
 
         <div className={styles.mainPage__banner}>
@@ -62,7 +51,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.mainPage__example}></div>
+        <div className={styles.mainPage__example}>
+          <div className={styles.mainPage__exampleTitle}>Примеры</div>
+          <div className={styles.mainPage__examples}>
+            {[{id: 1, img: firstExample}, {id: 1, img: secondExample}, {id: 1, img: thirdExample}].map(({id, img}) => (
+              <div key={id} className={styles.mainPage__exampleImg}>
+                <Image src={img} alt="Пример"></Image>
+              </div>
+            ))}
+          </div>
+        </div>
 
       </main>
 

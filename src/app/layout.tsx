@@ -12,15 +12,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  footer
+  header,
+  footer,
+
 }: {
   children: React.ReactNode,
-  footer: React.ReactNode
+  header: React.ReactNode,
+  footer: React.ReactNode,
 }) {
   return (
     <ThemeProvider>
       <html lang="ru">
         <body className={roboto.className}>
+          {header}
           {children}
           {footer}
         </body>
