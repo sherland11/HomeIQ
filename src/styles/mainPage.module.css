@@ -38,7 +38,7 @@
 .mainPage__secondaryBtn {
     text-align: center;
     border: 1px solid var(--secondary-color);
-    background: var(--button-background-color);
+    background: var(--secondary-background-color);
     color: var(--accent-color);
     border-radius: 6px;
 }

@@ -21,7 +21,7 @@ export default function Home() {
               TaskMaster - это инновационное мобильное приложение, которое поможет вам организовать вашу повседневную жизнь и повысить производительность. Независимо от того, что у вас на повестке дня, TaskMaster делает управление задачами и временем простым и эффективным.
             </div>
             <div className={styles.mainPage__buttons}>
-              <Link href="/build" className={styles.mainPage__accentBtn}>Скачать</Link>
+              <Link href="/install" className={styles.mainPage__accentBtn}>Скачать</Link>
               <Link href="/info" className={styles.mainPage__secondaryBtn}>Подробности</Link>
             </div>
           </div>

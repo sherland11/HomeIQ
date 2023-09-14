@@ -3,7 +3,7 @@
 	--text-color: #ffffff;
 	--accent-color: #ffffff;
 	--secondary-color: #888888;
-	--button-background-color: #0A0A0A;
+	--secondary-background-color: #0A0A0A;
 	--footer-background-color: #292929;
 	--border-color: #333333;
 }
@@ -13,7 +13,7 @@
 	--text-color: #000000;
 	--accent-color: #000000;
 	--secondary-color: #888888;
-	--button-background-color: #f0f0f0;
+	--secondary-background-color: #f0f0f0;
 	--footer-background-color: #dddddd;
 	--border-color: #333333;
 }
