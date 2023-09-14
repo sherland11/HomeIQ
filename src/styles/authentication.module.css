@@ -1,0 +1,60 @@
+.authentication {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 90vh;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+
+.authentication__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authentication__form_signUp {
+    width: 450px;
+    min-height: 45vh;
+}
+
+.authentication__form_logIn {
+    width: 450px;
+    min-height: 35vh;
+}
+
+.authentication__title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.authentication__form input {
+    height: 50px;
+    border-radius: 12px;
+    color: var(--accent-color);
+    background: var(--button-background-color);
+    border: 1px solid var(--button-background-color);
+    transition: 500ms ease all;
+    padding: 4px 10px;
+    margin: 1px;
+    width: 100%;
+}
+
+.authentication__form input:focus {
+    border: 1px solid var(--accent-color);
+    transition: 500ms ease all;
+    outline: none; 
+}
+
+.authentication__submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+    font-size: 20px;
+}

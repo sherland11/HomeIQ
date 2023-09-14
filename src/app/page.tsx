@@ -16,11 +16,13 @@ export default function Home() {
 
         <div className={styles.mainPage__banner}>
           <div className={styles.mainPage__bannerText}>
-            <div className={styles.mainPage__title}>Заголовок</div>
-            <div className={styles.mainPage__subTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ex nam illum nostrum quisquam odit, amet debitis eligendi quam minus!</div>
+            <div className={styles.mainPage__title}>Упростите свою жизнь с приложением TaskMaster</div>
+            <div className={styles.mainPage__subTitle}>
+              TaskMaster - это инновационное мобильное приложение, которое поможет вам организовать вашу повседневную жизнь и повысить производительность. Независимо от того, что у вас на повестке дня, TaskMaster делает управление задачами и временем простым и эффективным.
+            </div>
             <div className={styles.mainPage__buttons}>
-              <Link href="/build" className={styles.mainPage__accentBtn}>Заказать</Link>
-              <Link href="/2" className={styles.mainPage__secondaryBtn}>2 кнопка</Link>
+              <Link href="/build" className={styles.mainPage__accentBtn}>Скачать</Link>
+              <Link href="/info" className={styles.mainPage__secondaryBtn}>Подробности</Link>
             </div>
           </div>
           <div className={styles.mainPage__area}>
@@ -40,14 +42,14 @@ export default function Home() {
         </div>
 
         <div className={styles.mainPage__cards}>
-          <div className={styles.mainPage__cardsTitle}>Заголовок</div>
+          <div className={styles.mainPage__cardsTitle}>Почему выбирают нас</div>
           <div className={styles.mainPage__cardsContent}>
-            <Card image={firstImg} title="Title card 1" subTitle="faaaa aaaaaaaaaa aaaaaa aaaaaa aaaaaa"></Card>
-            <Card image={secondImg} title="Title card 2" subTitle="faaa aaaaaaaaaa aaaaaa aaaaaaa aaaaaa"></Card>
-            <Card image={firstImg} title="Title card 3" subTitle="faa aaaaaaa aaaaa aaaaaaaaaa aaaaaaaa"></Card>
-            <Card title="Title card 4" subTitle="af wwwwww wwwwww wwwwwwwww wwwwwwwwwwwww"></Card>
-            <Card title="Title card 5" subTitle="afwwwwww wwwwwwwwwwww wwwwwwwwww wwwwww"></Card>
-            <Card title="Title card 6" subTitle="afw wwwww wwwww wwwwww wwwwww wwwwwwwwwww"></Card>
+            <Card image={firstImg} title="Кастомизация" subTitle="Настраивайте свой список задач и управляйте им, чтобы отразить ваш стиль и приоритеты."></Card>
+            <Card image={secondImg} title="Уведомления" subTitle="Не забудьте о важных задачах благодаря удобным напоминаниям и уведомлениям."></Card>
+            <Card image={firstImg} title="Интеграция" subTitle="Синхронизируйте свой TaskMaster с календарем и контактами для лучшей организации вашей жизни."></Card>
+            <Card title="Мультиплатформенность" subTitle="Доступ к вашим задачам и спискам с любого устройства - iOS, Android, и даже веб."></Card>
+            <Card title="Простой интерфейс" subTitle=" Легко создавайте, редактируйте и управляйте задачами с интуитивно понятным интерфейсом."></Card>
+            <Card title="Интерактивный опыт" subTitle="Ощутите удовольствие от работы с приложением благодаря мгновенным обновлениям и жестам для управления задачами."></Card>
           </div>
         </div>
 

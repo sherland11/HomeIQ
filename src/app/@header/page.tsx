@@ -8,9 +8,9 @@ export default function Header() {
             <nav className={styles.header__nav}>
                 <ul>
                     <li><Link href="/" className={styles.header__logo}>Логотип</Link></li>
-                    <li><Link href="/build">Сборка</Link></li>
+                    <li><Link href="/build">Контакты</Link></li>
                     <li><Link href="/blog">Блог</Link></li>
-                    <li><Link href="/contacts">Контакты</Link></li>
+                    <li><Link href="/contacts">FAQ</Link></li>
                 </ul>
                 <div className={styles.header__authentication}>
                     <Link href="/log-in" className={styles.header__secondaryBtn}>Вход</Link>
