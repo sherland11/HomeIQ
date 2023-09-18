@@ -4,6 +4,7 @@
 	--accent-color: #ffffff;
 	--secondary-color: #888888;
 	--secondary-background-color: #0A0A0A;
+	--button-background-color: #1A1A1A;
 	--footer-background-color: #292929;
 	--border-color: #333333;
 }
@@ -12,8 +13,9 @@
 	--theme-color: #ffffff;
 	--text-color: #000000;
 	--accent-color: #000000;
-	--secondary-color: #888888;
+	--secondary-color: #666666;
 	--secondary-background-color: #f0f0f0;
+	--button-background-color: #F2F2F2;
 	--footer-background-color: #dddddd;
 	--border-color: #333333;
 }

@@ -1,0 +1,18 @@
+.faq {
+    margin: 100px auto 0 auto;
+    width: 80%;
+}
+
+.faq__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.faq__question {
+    margin-bottom: 15px;
+}
+
+.faq__question:last-child{
+    background-color: red;
+}

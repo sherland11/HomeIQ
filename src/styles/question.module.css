@@ -1,0 +1,12 @@
+.question {
+    margin-bottom: 15px;
+}
+
+.question__issue {
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.question__answer {
+    font-weight: 300;
+}

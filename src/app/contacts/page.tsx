@@ -1,8 +1,13 @@
 import styles from '@/styles/contacts.module.css'
+import Vk from '@/images/vk.svg'
+import Tg from '@/images/telegram.svg'
+import X from '@/images/X.svg'
+import Link from 'next/link'
 
 export default function contacts() {
     return (
         <div className={styles.contacts}>
+            <div className={styles.contacts__title}>Свяжитесь с нами</div>
             <div className={styles.contacts__content}>
                 <form className={styles.contacts__form}>
                     <div className={styles.contacts__formGroup}>
@@ -15,7 +20,14 @@ export default function contacts() {
                     </div>
                     <button type='submit'>Отправить</button>
                 </form>
-                <div className={styles.contacts__media}>Медия</div>
+                <div className={styles.contacts__media}>
+                    <div className={styles.contacts__mediaTitle}>Наши соцсети</div>
+                    <div className={styles.contacts__logo}>
+                        <Link href="https://vk.com/"><Vk fill="#ffffff"></Vk></Link>
+                        <Link href="https://telegram.org/"><Tg fill='#ffffff'></Tg></Link>
+                        <Link href="https://twitter.com/"><X fill='#ffffff'></X></Link>
+                    </div>
+                </div>
             </div>
         </div>
     )
