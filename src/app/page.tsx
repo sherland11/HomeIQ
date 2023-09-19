@@ -16,9 +16,9 @@ export default function Home() {
 
         <div className={styles.mainPage__banner}>
           <div className={styles.mainPage__bannerText}>
-            <div className={styles.mainPage__title}>Упростите свою жизнь с приложением TaskMaster</div>
+            <div className={styles.mainPage__title}>Упростите свою жизнь с приложением HomeIQ</div>
             <div className={styles.mainPage__subTitle}>
-              TaskMaster - это инновационное мобильное приложение, которое поможет вам организовать вашу повседневную жизнь и повысить производительность. Независимо от того, что у вас на повестке дня, TaskMaster делает управление задачами и временем простым и эффективным.
+              HomeIQ - это современное мобильное приложение, которое придает вашему умному дому дополнительный уровень интеллекта. От управления освещением и климатом до обеспечения безопасности вашего дома, HomeIQ делает вашу жизнь более комфортной и безопасной. Управляйте вашим домом с умом с HomeIQ.
             </div>
             <div className={styles.mainPage__buttons}>
               <Link href="/install" className={styles.mainPage__accentBtn}>Скачать</Link>

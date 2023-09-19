@@ -9,7 +9,7 @@ export default function Header() {
                 <ul>
                     <li><Link href="/" className={styles.header__logo}>Логотип</Link></li>
                     <li><Link href="/contacts">Контакты</Link></li>
-                    <li><Link href="/blog">Блог</Link></li>
+                    <li><Link href="/update">Обновления</Link></li>
                     <li><Link href="/FAQ">FAQ</Link></li>
                 </ul>
                 <div className={styles.header__authentication}>

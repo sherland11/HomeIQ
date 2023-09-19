@@ -18,7 +18,7 @@ export default function footer() {
                         <nav className={styles.footer__nav}>
                             <Link href="/" className={styles.footer__logo}>Логотип</Link>
                             <Link href="/build">Сборка</Link>
-                            <Link href="/blog">Блог</Link>
+                            <Link href="/update">Обновления</Link>
                             <Link href="/contacts">Контакты</Link>
                         </nav>
                         <div className={styles.footer__theme}>

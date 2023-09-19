@@ -1,0 +1,39 @@
+.update {
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
+
+.update__content {
+    margin-bottom: 30px;
+}
+
+.update__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.update__subTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.update__upgrades {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.update__upgrade {
+    margin-bottom: 5px;
+}
+
+.update__guide {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.update__feedback {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
