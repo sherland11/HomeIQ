@@ -230,19 +230,26 @@
     text-align: center;
 }
 
-.mainPage__examples {
+.mainPage__partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPage__partnerTitle {
+    font-size: 32px;
+}
+
+
+.mainPage__partnerImages {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.mainPage__exampleImg {
-    width: 32%;
+.mainPage__partnerImages img {
+    width: 30%;
+    height: auto;
 }
 
-.mainPage__exampleImg img {
-    max-width: 100%;
-    height: 500px;
-    object-fit: cover;
-}

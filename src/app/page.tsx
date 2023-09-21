@@ -1,12 +1,13 @@
 import Card from '@/components/Card'
 import styles from '@/styles/mainPage.module.css'
 import Link from 'next/link'
-import firstImg from '@/images/1.png'
-import secondImg from '@/images/2.png'
+import firstCardImg from '@/images/phone.png'
+import secondCardImg from '@/images/power-bank.png'
+import thirdCardImg from '@/images/key.png'
+import firstPartnerImg from '@/images/google-nest.png'
+import secondPartnerImg from '@/images/amazon-echo.png'
+import thirdPartnerImg from '@/images/philips-hue.png'
 import Image from 'next/image'
-import firstExample from "@/images/example/1.jpg"
-import secondExample from "@/images/example/2.png"
-import thirdExample from "@/images/example/3.jpg"
 
 export default function Home() {
   return (
@@ -44,23 +45,30 @@ export default function Home() {
         <div className={styles.mainPage__cards}>
           <div className={styles.mainPage__cardsTitle}>Почему выбирают нас</div>
           <div className={styles.mainPage__cardsContent}>
-            <Card image={firstImg} title="Кастомизация" subTitle="Настраивайте свой список задач и управляйте им, чтобы отразить ваш стиль и приоритеты."></Card>
-            <Card image={secondImg} title="Уведомления" subTitle="Не забудьте о важных задачах благодаря удобным напоминаниям и уведомлениям."></Card>
-            <Card image={firstImg} title="Интеграция" subTitle="Синхронизируйте свой TaskMaster с календарем и контактами для лучшей организации вашей жизни."></Card>
-            <Card title="Мультиплатформенность" subTitle="Доступ к вашим задачам и спискам с любого устройства - iOS, Android, и даже веб."></Card>
-            <Card title="Простой интерфейс" subTitle=" Легко создавайте, редактируйте и управляйте задачами с интуитивно понятным интерфейсом."></Card>
-            <Card title="Интерактивный опыт" subTitle="Ощутите удовольствие от работы с приложением благодаря мгновенным обновлениям и жестам для управления задачами."></Card>
+            <Card image={firstCardImg} title="Голосовое управление" subTitle="Управляйте вашим умным домом голосом, используя голосовых помощников, таких как Amazon Alexa и Google Assistant." />
+            <Card image={secondCardImg} title="Энергосбережение" subTitle="Оптимизируйте потребление энергии и снижайте коммунальные счета благодаря интеллектуальному управлению ресурсами." />
+            <Card image={thirdCardImg} title="Безопасность" subTitle="Повышенная безопасность с детекторами утечки газа и интеграцией с системами наблюдения." />
+            <Card title="Мультимедийный контроль" subTitle="Управляйте аудио, видео и стримингом музыки в вашем доме из одного приложения." />
+            <Card title="Интеграция умных устройств" subTitle="Широкая совместимость с умными устройствами и брендами для полного управления вашим умным домом." />
+            <Card title="Персонализированный доступ" subTitle="Создавайте профили и управляйте доступом для разных пользователей вашего умного дома." />
           </div>
         </div>
 
-        <div className={styles.mainPage__example}>
-          <div className={styles.mainPage__exampleTitle}>Примеры</div>
-          <div className={styles.mainPage__examples}>
-            {[{id: 1, img: firstExample}, {id: 1, img: secondExample}, {id: 1, img: thirdExample}].map(({id, img}) => (
-              <div key={id} className={styles.mainPage__exampleImg}>
-                <Image src={img} alt="Пример"></Image>
-              </div>
-            ))}
+        <div className={styles.mainPage__partner}>
+          <div className={styles.mainPage__partnerTitle}>Наши партнеры</div>
+          <div className={styles.mainPage__partnerImages}>
+            <Image 
+              src={firstPartnerImg} 
+              alt='google nest'
+            />
+            <Image 
+              src={secondPartnerImg} 
+              alt='amazon echo'
+            />
+            <Image 
+              src={thirdPartnerImg} 
+              alt='philips hue'
+            />
           </div>
         </div>
 
