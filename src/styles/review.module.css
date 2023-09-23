@@ -1,0 +1,17 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    padding: 20px;
+    height: 175px;
+}
+
+.review__text {
+    line-height: 20px;
+}
+
+.review__company {
+    font-size: 18px;
+    font-weight: 600;
+}

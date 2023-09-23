@@ -8,6 +8,7 @@ import firstPartnerImg from '@/images/google-nest.png'
 import secondPartnerImg from '@/images/amazon-echo.png'
 import thirdPartnerImg from '@/images/philips-hue.png'
 import Image from 'next/image'
+import Review from '@/components/Review'
 
 export default function Home() {
   return (
@@ -70,6 +71,23 @@ export default function Home() {
               alt='philips hue'
             />
           </div>
+        </div>
+
+        <div className={styles.mainPage__reviews}>
+          <Review
+            company='Google Nest'
+            text='HomeIQ превзошел наши ожидания. Это мощное и удобное приложение, которое интегрируется с нашими устройствами безупречно. Оно действительно упрощает жизнь пользователей.'
+          />
+          <div className={styles.mainPage__reviews_border}></div>
+          <Review
+            company='Amazon Echo'
+            text='HomeIQ добавил значительную ценность в экосистему голосовых помощников. Интеграция с нашей системой Alexa делает управление умным домом более интуитивным и удобным для наших клиентов.'
+          />
+          <div className={styles.mainPage__reviews_border}></div>
+          <Review 
+            company='Philips Hue'
+            text='Мы рады сотрудничеству с HomeIQ. Наше умное освещение Philips Hue отлично взаимодействует с приложением HomeIQ, предоставляя пользователям беспрецедентный контроль над светом в их домах.'
+          />
         </div>
 
       </main>
