@@ -1,0 +1,38 @@
+.install {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    height: 90vh;
+}
+
+.install_content {
+    display: flex;
+    justify-content: space-between;
+    width: 992px;
+}
+
+.install__platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.install__logo {
+    width: 100%;
+    height: auto;
+}
+
+.install__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.install__btn img {
+    width: 50%;
+    height: auto;
+}

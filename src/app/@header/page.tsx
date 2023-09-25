@@ -12,16 +12,15 @@ export default function Header() {
                     <li>
                         <Link href="/"  className={styles.header__logo}>
                             <Image src={Logo} alt="Логотип"></Image>
-                            <div>HomeIQ</div>
+                            <div className={styles.header__title}>HomeIQ</div>
                         </Link>
                     </li>
                     <li><Link href="/contacts">Контакты</Link></li>
                     <li><Link href="/update">Обновления</Link></li>
                     <li><Link href="/FAQ">FAQ</Link></li>
                 </ul>
-                <div className={styles.header__authentication}>
-                    <Link href="/log-in" className={styles.header__secondaryBtn}>Вход</Link>
-                    <Link href="/sign-up" className={styles.header__accentBtn}>Регистрация</Link>
+                <div className={styles.header__btn}>
+                    <Link href="/install" className={styles.header__installBtn}>Скачать</Link>
                 </div>
             </nav>
         </header>

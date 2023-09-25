@@ -16,10 +16,9 @@ export default function footer() {
                 <footer className={styles.footer}>
                     <div className={styles.footer__menu}>
                         <nav className={styles.footer__nav}>
-                            <Link href="/" className={styles.footer__logo}>Логотип</Link>
-                            <Link href="/build">Сборка</Link>
-                            <Link href="/update">Обновления</Link>
                             <Link href="/contacts">Контакты</Link>
+                            <Link href="/update">Обновления</Link>
+                            <Link href="/FAQ">FAQ</Link>
                         </nav>
                         <div className={styles.footer__theme}>
                             <Sun className={themeActive === "light" ? styles.footer__theme_active : ""} onClick={() => { 
