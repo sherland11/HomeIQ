@@ -1,12 +1,14 @@
 .question {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .question__issue {
     font-weight: 600;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-size: 24px;
 }
 
 .question__answer {
     font-weight: 300;
+    font-size: 20px;
 }

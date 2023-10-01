@@ -9,12 +9,42 @@ import secondPartnerImg from '@/images/amazon-echo.png'
 import thirdPartnerImg from '@/images/philips-hue.png'
 import Image from 'next/image'
 import Review from '@/components/Review'
+import Technology from '@/components/Technology'
+import GoogleCloud from '@/images/google-cloud-platform.png'
+import SigFox from '@/images/sigfox.png'
+import Kotlin from '@/images/kotlin.png'
+import PostgreSql from '@/images/postgresql.png'
+import GoogleAssistant from '@/images/google-assistant.png'
+import GoogleAI from '@/images/google-ai.png'
+import { useEffect, useState } from 'react'
+import { useTransition } from 'react-spring'
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById('yourElementId'); // Замените на свой элемент
+      const rect = element?.getBoundingClientRect();
+      setIsVisible(!!rect && rect.top < window.innerHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const transitions = useTransition(isVisible, {
+    from: { opacity: 0, transform: 'translateY(50px)' },
+    enter: { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 0, transform: 'translateY(50px)' },
+  });
+
   return (
-    <div className={styles.mainPage}>
+    <main className={styles.mainPage}>
       
-      <main className={styles.mainPage__content}>
+      <div className={styles.mainPage__content}>
 
         <div className={styles.mainPage__banner}>
           <div className={styles.mainPage__bannerText}>
@@ -93,8 +123,44 @@ export default function Home() {
           />
         </div>
 
-      </main>
+        <div className={styles.mainPage__technologies}>
+          <div className={styles.mainPage__technologiesTitle}>Мы используем последние технологии</div>
+          <div className={styles.mainPage__technologiesContent}>
+            <Technology 
+              title='Облачные вычисления'
+              img={GoogleCloud} 
+              text='HomeIQ использует облачную платформу Google Cloud Platform для хранения и обработки данных умного дома, обеспечивая доступность и синхронизацию на разных устройствах.'
+            />
+            <Technology 
+              title='IoT'
+              img={SigFox}
+              text='С технологиями SigFox IoT HomeIQ собирает данные о состоянии и потреблении ресурсов в реальном времени, что позволяет мониторить и управлять устройствами.'
+            />
+            <Technology 
+              title='Мобильное разработка'
+              img={Kotlin}
+              text='Приложение HomeIQ разрабатывается с использованием Kotlin (Android) и Swift (iOS), обеспечивая множественную платформенную поддержку.'
+            />
+            <Technology 
+              title='Базы данных и хранение'
+              img={PostgreSql}
+              text=' HomeIQ использует мощные базы данных, такие как PostgreSQL и MongoDB, для хранения и анализа данных о потреблении ресурсов и настройках пользователей.'
+            />
+            <Technology 
+              title='Голосовые помощники'
+              img={GoogleAssistant}
+              text='HomeIQ интегрируется с голосовыми помощниками, такими как Amazon Alexa и Google Assistant, что позволяет вам управлять вашим умным домом голосом.'
+            />
+            <Technology 
+              title='Искусственный интеллект'
+              img={GoogleAI}
+              text='Искусственный интеллект анализирует данные о потреблении ресурсов, предоставляя рекомендации для оптимизации умного дома, мы используем технологии Google AI.'
+            />
+          </div>
+        </div>
 
-    </div>
+      </div>
+
+    </main>
   )
 }

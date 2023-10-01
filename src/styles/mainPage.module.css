@@ -260,6 +260,7 @@
     width: 75%;
     border: 1px solid var(--border-color);
     border-radius: 12px;
+    margin-bottom: 75px;
 }
 
 .mainPage__reviews_border {
@@ -268,3 +269,14 @@
     background-color: var(--border-color);
 }
 
+.mainPage__technologiesTitle {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mainPage__technologiesContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

@@ -1,6 +1,7 @@
 .update {
     width: 80%;
     margin: 100px auto 0 auto;
+    font-size: 20px;
 }
 
 .update__content {
@@ -8,13 +9,13 @@
 }
 
 .update__title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
 .update__subTitle {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px
 }
