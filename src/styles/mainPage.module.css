@@ -217,17 +217,13 @@
     width: 100%;
 }
 
-.mainPAge__example {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.mainPage__exampleTitle {
-    font-size: 32px;
-    margin-bottom: 40px;
-    text-align: center;
+.mainPage__cardsContent > div {
+    width: 29%;
+    border: 2px solid var(--border-color);
+    padding: 1.5%;
+    border-radius: 12px;
+    margin-bottom: 1.5%;
+    
 }
 
 .mainPage__partner {
@@ -239,6 +235,7 @@
 
 .mainPage__partnerTitle {
     font-size: 32px;
+    margin-bottom: 32px;
 }
 
 
@@ -249,8 +246,13 @@
     justify-content: space-between;
 }
 
-.mainPage__partnerImages img {
+.mainPage__partnerImages > div {
     width: 25%;
+    height: auto;
+}
+
+.mainPage__partnerImages img {
+    width: 100%;
     height: auto;
 }
 
@@ -261,12 +263,17 @@
     border: 1px solid var(--border-color);
     border-radius: 12px;
     margin-bottom: 75px;
+    margin:  0 auto;
 }
 
 .mainPage__reviews_border {
     width: 1px;
     height: 215px;
     background-color: var(--border-color);
+}
+
+.mainPage__technologies {
+    margin-top: 100px;
 }
 
 .mainPage__technologiesTitle {
@@ -279,4 +286,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.mainPage__technologiesContent > div {
+    width: 28%;
+    border: 5px solid var(--secondary-background-color);
+    box-shadow: 0px 0px 3px var(--border-color);
+    margin-bottom: 25px;
+    border-radius: 12px;
+    padding: 24px;
 }
