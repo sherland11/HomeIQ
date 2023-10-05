@@ -1,23 +1,26 @@
+import Animated from "@/components/Animated";
 import Update from "@/components/Update";
 import styles from '@/styles/update.module.css'
 
 export default function update() {
     return (
         <div className={styles.update}>
-            <div className={styles.update__title}>Обновления приложения HomeIQ</div>
-            <div className={styles.update__guide}>
-                <p className={styles.update__subTitle}>Как обновиться:</p>
-                <p>
-                    Чтобы получить последнюю версию HomeIQ, перейдите в соответствующий магазин приложений на вашем устройстве (App Store для iOS, Google Play для Android, Microsoft Store для Windows или Mac App Store для macOS) и выполните обновление.
-                </p>
-            </div>
-            <div className={styles.update__feedback}>
-                <p className={styles.update__subTitle}>Обратная связь:</p>
-                <p>
-                    Ваши отзывы и предложения очень важны для нас. Если у вас есть какие-либо замечания или пожелания по новой версии TaskMaster, пожалуйста, свяжитесь с нами с помощью формы обратной связи.
-                </p>
-                <p>Благодарим вас за использование TaskMaster! Мы продолжаем работать над улучшением приложения, чтобы сделать вашу жизнь более организованной и продуктивной.</p>
-            </div>
+            <Animated>
+                <div className={styles.update__title}>Обновления приложения HomeIQ</div>
+                <div className={styles.update__guide}>
+                    <p className={styles.update__subTitle}>Как обновиться:</p>
+                    <p>
+                        Чтобы получить последнюю версию HomeIQ, перейдите в соответствующий магазин приложений на вашем устройстве (App Store для iOS, Google Play для Android, Microsoft Store для Windows или Mac App Store для macOS) и выполните обновление.
+                    </p>
+                </div>
+                <div className={styles.update__feedback}>
+                    <p className={styles.update__subTitle}>Обратная связь:</p>
+                    <p>
+                        Ваши отзывы и предложения очень важны для нас. Если у вас есть какие-либо замечания или пожелания по новой версии TaskMaster, пожалуйста, свяжитесь с нами с помощью формы обратной связи.
+                    </p>
+                    <p>Благодарим вас за использование TaskMaster! Мы продолжаем работать над улучшением приложения, чтобы сделать вашу жизнь более организованной и продуктивной.</p>
+                </div>
+            </Animated>
             <Update 
                 version="3.0"
                 upgrades={[

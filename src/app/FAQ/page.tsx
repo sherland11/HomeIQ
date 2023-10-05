@@ -1,5 +1,6 @@
 import styles from '@/styles/faq.module.css'
 import Question from '@/components/Question'
+import Animated from '@/components/Animated'
 
 export default function faq() {
   return (

@@ -1,6 +1,5 @@
 'use client'
 import { animated, useInView, useSpring } from "@react-spring/web";
-import { useRef, useEffect } from "react";
 
 export default function Animated({ children }: { children: React.ReactNode }) {
     const [ref, springs] = useInView(
@@ -12,10 +11,10 @@ export default function Animated({ children }: { children: React.ReactNode }) {
             to: {
               opacity: 1,
               y: 0,
-            },
+            }
           }),
           {
-            rootMargin: '-20% 0%',
+            rootMargin: '-20% 0%'
           }
       );
 
