@@ -16,38 +16,46 @@
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 64px;
 }
 
-.header__nav ul {
+@media(max-width: 767px) {
+    .header__nav {
+        width: 90%;
+        justify-content: space-between;
+    }
+}
+
+.header__links {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 30%;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.header__nav ul li {
-    display: flex;
-    align-items: center;
+@media(max-width: 767px) {
+    .header__links {
+        display: none;
+    }
 }
 
-.header__nav ul a {
+.header__links a {
    color: var(--secondary-color);
    transition: 200ms ease color;
 }
 
-.header__nav ul a:hover {
+.header__links a:hover {
     color: var(--accent-color);
  }
 
  .header__logo {
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .header__logo img {
@@ -62,6 +70,13 @@
 
 .header__btn {
     display: flex;
+    margin-left: auto;
+}
+
+@media(max-width: 767px) {
+    .header__btn {
+        display: none;
+    }
 }
 
 .header__installBtn {
@@ -73,4 +88,49 @@
     width: 130px;
     height: 35px;
     line-height: 35px;
+}
+
+.header__burgerMenu {
+    display: block;
+}
+
+.header__burgerMenu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 6px auto;
+    transition: 0.4s;
+}
+
+.header__burgerMenu_active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.header__burgerMenu_active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__burgerMenu_active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+@media(min-width: 767px) {
+    .header__burgerMenu {
+        display: none;
+    }
+}
+
+.header__burgerActive {
+    position: fixed;
+    top: 64px;
+    transform: translateX(0);
+    transition: 750ms ease transform;
+}
+
+.header__burgerNotActive {
+    position: fixed;
+    top: 64px;
+    transform: translateX(200%);
+    transition: 750ms ease transform;
 }
