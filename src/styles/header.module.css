@@ -123,14 +123,14 @@
 
 .header__burgerActive {
     position: fixed;
-    top: 64px;
+    top: 65px;
     transform: translateX(0);
     transition: 750ms ease transform;
 }
 
 .header__burgerNotActive {
     position: fixed;
-    top: 64px;
+    top: 65px;
     transform: translateX(200%);
     transition: 750ms ease transform;
 }

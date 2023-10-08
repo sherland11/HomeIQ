@@ -1,12 +1,12 @@
 'use client'
-import { animated, useInView, useSpring } from "@react-spring/web";
+import { animated, useInView } from "@react-spring/web";
 
 export default function Animated({ children }: { children: React.ReactNode }) {
     const [ref, springs] = useInView(
         () => ({
             from: {
               opacity: 0,
-              y: -40,
+              y: -10,
             },
             to: {
               opacity: 1,

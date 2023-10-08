@@ -3,22 +3,20 @@ import Link from "next/link";
 import styles from "@/styles/header.module.css"
 import Image from "next/image";
 import Logo from '@/images/logo.png'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Burger from "@/components/Burger";
 
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    if (menuOpen) {
-        document.body.style.overflow = 'hidden'
-    } else {
-        document.body.style.overflow = 'auto'
-    }
+    useEffect(() => {
+        document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
+    }, [menuOpen])
 
     return (
         <header className={styles.header}>
             <nav className={styles.header__nav}>
-                <Link href="/"  className={styles.header__logo}>
+                <Link href="/"  className={styles.header__logo} onClick={() => setMenuOpen(false)}>
                     <Image src={Logo} alt="Логотип"></Image>
                     <div className={styles.header__title}>HomeIQ</div>
                 </Link>
@@ -37,7 +35,7 @@ export default function Header() {
                 </div>
             </nav>
             <div className={menuOpen ? styles.header__burgerActive : styles.header__burgerNotActive}>
-                <Burger />
+                <Burger setMenuOpen={setMenuOpen} />
             </div>
         </header>
     )

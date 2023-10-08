@@ -6,10 +6,25 @@
     height: 90vh;
 }
 
-.install_content {
+@media(max-width: 767px) {
+    .install {
+        align-items: flex-start;
+        height: auto;
+    }
+}
+
+.install__content {
     display: flex;
     justify-content: space-between;
     width: 992px;
+}
+
+@media(max-width: 767px) {
+    .install__content {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+    }
 }
 
 .install__platform {
@@ -17,6 +32,13 @@
     flex-direction: column;
     align-items: center;
     width: 45%;
+}
+
+@media(max-width: 767px) {
+    .install__platform {
+        width: 100%;
+        margin: 50px 0 50px 0;
+    }
 }
 
 .install__logo {
