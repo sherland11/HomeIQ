@@ -23,6 +23,12 @@
     width: 40%;
 }
 
+@media(max-width:767px) {
+    .footer__nav {
+        display: none;
+    }
+}
+
 .footer__nav a {
     display: flex;
     text-decoration: none;
@@ -43,6 +49,13 @@
     height: 40px;
     border: 1px solid var(--secondary-color);
     border-radius: 9999px;
+}
+
+@media(max-width:767px) {
+    .footer__theme {
+        width: 200px;
+        margin: 0 auto;
+    }
 }
 
 .footer__theme svg {

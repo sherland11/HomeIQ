@@ -305,17 +305,32 @@
     margin:  0 auto;
 }
 
-
 @media(max-width: 767px) {
     .mainPage__reviews {
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
     }
 }
 
-.mainPage__reviews_border {
-    width: 1px;
-    height: 215px;
-    background-color: var(--border-color);
+.mainPage__reviews > *:first-child {
+    border-right: 1px solid var(--border-color);
+}
+
+.mainPage__reviews > *:last-child {
+    border-left: 1px solid var(--border-color);
+}
+
+@media(max-width: 767px) {
+    .mainPage__reviews > *:first-child {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .mainPage__reviews > *:last-child {
+        border-left: 0;
+        border-top: 1px solid var(--border-color);
+    }
 }
 
 .mainPage__technologies {

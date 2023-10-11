@@ -27,11 +27,21 @@
     }
 }
 
+.install__content > div {
+    width: 45%;
+}
+
+@media(max-width: 767px) {
+    .install__content > div {
+        width: 100%;
+    }
+}
+
 .install__platform {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 100%;
 }
 
 @media(max-width: 767px) {
