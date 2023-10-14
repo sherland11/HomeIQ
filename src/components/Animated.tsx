@@ -1,7 +1,12 @@
 'use client'
 import { animated, useInView } from "@react-spring/web";
 
-export default function Animated({ children }: { children: React.ReactNode }) {
+interface Props {
+  children: React.ReactNode
+  rootMargin10?: boolean
+}
+
+export default function Animated({ children, rootMargin10 = false }: Props) {
     const [ref, springs] = useInView(
         () => ({
             from: {
@@ -14,7 +19,7 @@ export default function Animated({ children }: { children: React.ReactNode }) {
             }
           }),
           {
-            rootMargin: '-20% 0%'
+            rootMargin: rootMargin10 ? '-10% 0%' : '-20% 0%'
           }
       );
 

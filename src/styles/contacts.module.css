@@ -28,6 +28,12 @@
     height: 40vh;
 }
 
+@media(max-width: 992px) {
+    .contacts__content {
+        width: 90%;
+    }
+}
+
 @media(max-width: 767px) {
     .contacts__content {
         flex-direction: column;
@@ -110,6 +116,11 @@
     background: var(--accent-color);
     color: var(--theme-color);
     cursor: pointer;
+    transition: 300ms ease filter;
+}
+
+.contacts__form button:hover {
+    filter: brightness(var(--filter-brightness-accent));
 }
 
 .contacts__media {
@@ -141,15 +152,6 @@
     justify-content: center;
     align-items: center;
 }
-
-/* @media(max-width: 767px) {
-    .contacts__logo {
-        
-    }
-    .contacts__logo a {
-        
-    }
-} */
 
 .contacts__logo svg {
     width: 75px;

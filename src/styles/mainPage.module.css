@@ -17,6 +17,12 @@
     width: 80%;
 }
 
+@media(max-width: 992px) {
+    .mainPage__content {
+        width: 90%;
+    }
+}
+
 @media(max-width: 767px) {
     .mainPage__content {
         width: 95%;
@@ -34,6 +40,12 @@
     margin-top: 65px;
 }
 
+@media(max-width: 767px) {
+    .mainPage__banner {
+        height: 100vh;
+    }
+}
+
 .mainPage__bannerText {
     display: flex;
     flex-direction: column;
@@ -42,21 +54,12 @@
     z-index: 100;
 }
 
-.mainPage__secondaryBtn {
-    text-align: center;
-    border: 1px solid var(--secondary-color);
-    background: var(--secondary-background-color);
-    color: var(--accent-color);
-    border-radius: 6px;
+@media(max-width: 767px) {
+    .mainPage__bannerText {
+        width: 90%;;
+    }
 }
 
-.mainPage__accentBtn {
-    text-align: center;
-    background: var(--accent-color);
-    color: var(--theme-color);
-    border-radius: 6px;
-    border: 1px solid var(--accent-color);
-}
 
 .mainPage__title {
     font-size: 68px;
@@ -70,11 +73,26 @@
     }
 }
 
+@media(max-width: 300px) {
+    .mainPage__title {
+        font-size: 32px;
+        margin-bottom: 44px;
+    }
+}
+
 .mainPage__subTitle {
     font-size: 20px;
     line-height: 30px;
     color: var(--secondary-color);
     margin-bottom: 30px;
+}
+
+@media(max-width: 300px) {
+    .mainPage__subTitle {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
 }
 
 .mainPage__buttons {
@@ -83,10 +101,48 @@
     width: 275px;
 }
 
+@media(max-width: 300px) {
+    .mainPage__buttons {
+        width: 220px;
+    }
+}
+
 .mainPage__buttons a {
     width: 120px;
     height: 40px;
     line-height: 40px;
+}
+
+@media(max-width: 300px) {
+    .mainPage__buttons a {
+        width: 100px;
+    }
+}
+
+.mainPage__secondaryBtn {
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-background-color);
+    color: var(--accent-color);
+    border-radius: 6px;
+    transition: 300ms ease filter;
+}
+
+.mainPage__secondaryBtn:hover {
+    filter: brightness(var(--filter-brightness-secondary));
+}
+
+.mainPage__accentBtn {
+    text-align: center;
+    background: var(--accent-color);
+    color: var(--theme-color);
+    border-radius: 6px;
+    border: 1px solid var(--accent-color);
+    transition: 300ms ease filter;
+}
+
+.mainPage__accentBtn:hover {
+    filter: brightness(var(--filter-brightness-accent));
 }
 
 .mainPage__area {
@@ -211,6 +267,18 @@
 
 }
 
+.mainPage__sectionTitle {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+@media(max-width: 300px) {
+    .mainPage__sectionTitle {
+        font-size: 24px;
+    }
+}
+
 .mainPage__cards {
     display: flex;
     flex-direction: column;
@@ -231,7 +299,7 @@
     width: 100%;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 992px) {
     .mainPage__cardsContent {
         justify-content: center;
     }
@@ -243,6 +311,13 @@
     padding: 1.5%;
     border-radius: 12px;
     margin-bottom: 1.5%; 
+}
+
+@media(max-width: 992px) {
+    .mainPage__cardsContent > div {
+        width: 80%;
+        margin-bottom: 2%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -272,7 +347,7 @@
     justify-content: space-between;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 992px) {
     .mainPage__partnerImages {
         justify-content: center;
     }
@@ -281,6 +356,12 @@
 .mainPage__partnerImages > div {
     width: 25%;
     height: auto;
+}
+
+@media(max-width: 992px) {
+    .mainPage__partnerImages > div {
+        width: 80%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -303,6 +384,12 @@
     border-radius: 12px;
     margin-bottom: 75px;
     margin:  0 auto;
+}
+
+@media(max-width: 992px) {
+    .mainPage__reviews {
+        width: 90%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -334,6 +421,9 @@
 }
 
 .mainPage__technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 100px;
 }
 
@@ -355,7 +445,13 @@
     box-shadow: 0px 0px 3px var(--border-color);
     margin-bottom: 25px;
     border-radius: 12px;
-    padding: 24px;
+    padding: 1.5%;
+}
+
+@media(max-width: 992px) {
+    .mainPage__technologiesContent > div {
+        width: 45%;
+    }
 }
 
 

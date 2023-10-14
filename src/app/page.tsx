@@ -60,7 +60,7 @@ export default function Home() {
 
         <div className={styles.mainPage__cards}>
           <Animated>
-            <div className={styles.mainPage__cardsTitle}>Почему выбирают нас</div>
+            <div className={styles.mainPage__sectionTitle}>Почему выбирают нас</div>
           </Animated>
           <div className={styles.mainPage__cardsContent}>
             <Card image={firstCardImg} title="Голосовое управление" subTitle="Управляйте вашим умным домом голосом, используя голосовых помощников, таких как Amazon Alexa и Google Assistant." />
@@ -77,7 +77,7 @@ export default function Home() {
 
         <div className={styles.mainPage__partner}>
           <Animated>
-            <div className={styles.mainPage__partnerTitle}>Наши партнеры</div>
+            <div className={styles.mainPage__sectionTitle}>Наши партнеры</div>
           </Animated>
           <div className={styles.mainPage__partnerImages}>
             <Animated>
@@ -119,7 +119,7 @@ export default function Home() {
 
         <div className={styles.mainPage__technologies}>
           <Animated>
-            <div className={styles.mainPage__technologiesTitle}>Мы используем последние технологии</div>
+            <div className={styles.mainPage__sectionTitle}>Мы используем последние технологии</div>
           </Animated>
           <div className={styles.mainPage__technologiesContent}>
             <Technology 
