@@ -35,7 +35,7 @@ export default function Footer() {
                             }} fill={theme === "light" ? "#000000" : "#ffffff"} />
                         </div>
                     </div>
-                    <div className={styles.footer__company}>© 2023 MyCompany, Inc.</div>
+                    <div className={styles.footer__company}>© 2023 HomeIQ, Inc.</div>
                 </footer>
             )}
         </ThemeContext.Consumer>
