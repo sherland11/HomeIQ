@@ -7,7 +7,7 @@ import Laptop from '@/images/laptop.svg'
 import Moon from '@/images/moon.svg'
 import { ThemeContext, themes } from "@/contexts/ThemeContext"
 
-export default function footer() {
+export default function Footer() {
     const [themeActive, setThemeActive] = useState<string>("system")
 
     return (
