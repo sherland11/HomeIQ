@@ -13,7 +13,7 @@ export default function Update({version, upgrades}: Props) {
                 <div className={styles.update__subTitle}>Версия {version}</div>
                 <div className={styles.update__upgrades}>
                     {upgrades.map((text, index) => (
-                        <div className={styles.update__upgrade}>{index + 1}. {text}</div>
+                        <div className={styles.update__upgrade} key={index}>{index + 1}. {text}</div>
                     ))}
                 </div>
             </div>
